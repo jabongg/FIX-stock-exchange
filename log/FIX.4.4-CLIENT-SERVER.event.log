@@ -1,0 +1,25 @@
+20240307-01:51:30: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-01:51:30: Created session: FIX.4.4:CLIENT->SERVER
+20240307-01:54:21: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-01:54:21: Created session: FIX.4.4:CLIENT->SERVER
+20240307-01:54:21: Configured socket addresses for session: [/127.0.0.1:8080]
+20240307-01:54:31: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-01:55:22: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-01:56:23: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-02:35:11: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-02:35:11: Created session: FIX.4.4:CLIENT->SERVER
+20240307-02:35:11: Configured socket addresses for session: [/127.0.0.1:8080]
+20240307-02:35:11: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-03:06:02: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-03:06:02: Created session: FIX.4.4:CLIENT->SERVER
+20240307-03:06:03: Configured socket addresses for session: [/127.0.0.1:8080]
+20240307-03:06:03: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-03:08:31: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-03:08:31: Created session: FIX.4.4:CLIENT->SERVER
+20240307-03:08:31: Configured socket addresses for session: [/127.0.0.1:8080]
+20240307-03:08:31: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-03:09:56: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)
+20240307-03:10:32: Session FIX.4.4:CLIENT->SERVER schedule is daily, 00:00:00-UTC - 00:00:00-UTC
+20240307-03:10:32: Created session: FIX.4.4:CLIENT->SERVER
+20240307-03:10:32: Configured socket addresses for session: [/127.0.0.1:8080]
+20240307-03:10:32: java.net.ConnectException during connection to /127.0.0.1:8080: java.net.ConnectException: Connection refused: no further information (Next retry in 60000 milliseconds)

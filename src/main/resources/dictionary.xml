@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<fix major="4" minor="4">
+    <header>
+        <fields>
+            <field number="8" name="BeginString" type="STRING"/>
+            <field number="9" name="BodyLength" type="LENGTH"/>
+            <field number="35" name="MsgType" type="STRING"/>
+        </fields>
+
+    </header>
+    <trailer>
+        <fields>
+            <field number="10" name="CheckSum" type="STRING"/>
+        </fields>
+    </trailer>
+    <messages>
+        <message name="NewOrderSingle" msgtype="D" msgcat="app">
+            <fields>
+                <field number="11" name="ClOrdID" type="STRING"/>
+                <field number="55" name="Symbol" type="STRING"/>
+                <field number="54" name="Side" type="CHAR"/>
+                <field number="38" name="OrderQty" type="QTY"/>
+                <field number="44" name="Price" type="PRICE"/>
+                <field number="40" name="OrdType" type="CHAR"/>
+                <field number="60" name="TransactTime" type="UTCTIMESTAMP"/>
+                <!-- Add more fields for NewOrderSingle message if necessary -->
+            </fields>
+        </message>
+        <message name="ExecutionReport" msgtype="8" msgcat="app">
+            <fields>
+                <field number="11" name="ClOrdID" type="STRING"/>
+                <field number="37" name="OrderID" type="STRING"/>
+                <field number="55" name="Symbol" type="STRING"/>
+                <field number="54" name="Side" type="CHAR"/>
+                <field number="39" name="OrdStatus" type="CHAR"/>
+                <!-- Add more fields for ExecutionReport message if necessary -->
+            </fields>
+        </message>
+        <!-- Define other message types as needed -->
+    </messages>
+</fix>
