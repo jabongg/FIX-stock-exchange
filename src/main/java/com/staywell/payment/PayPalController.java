@@ -16,6 +16,22 @@ public class PayPalController {
     @Autowired
     private PayPalService payPalService;
 
+    /**
+     * request structure postman
+     *
+     * POST /api/paypal/create-order HTTP/1.1
+     * Host: localhost:8888
+     * Content-Type: application/json
+     * Content-Length: 55
+     *
+     * {
+     *     "totalAmount": 100.00,
+     *     "currency": "USD"
+     * }
+     *
+     * @param orderRequest
+     * @return
+     */
     @PostMapping("/api/paypal/create-order")
     public ResponseEntity<String> createOrder(@RequestBody CreateOrderRequest orderRequest) {
         try {
@@ -28,6 +44,24 @@ public class PayPalController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create order");
         }
     }
+
+    /**
+     * api request structure postman
+     *
+     * POST /api/paypal/capture-order HTTP/1.1
+     * Host: localhost:8888
+     * Content-Type: application/json
+     * Content-Length: 40
+     *
+     * {
+     *     "orderId": "30090703DB043632U"
+     * }
+     *
+     * @param orderRequest
+     * @return Responses can be seen in
+     * paypal account : https://developer.paypal.com/dashboard/dashboard/sandbox
+     * I've checked, the request is logged in event logs of paypal sandbox;
+     */
     @PostMapping("/api/paypal/capture-order")
     public ResponseEntity<String> captureOrder(@RequestBody CaptureOrderRequest orderRequest) {
         try {
